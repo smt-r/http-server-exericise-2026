@@ -6,15 +6,22 @@
      h1{color: #f4005f;}
      p {font-weight: bold;}
     </style>
+    <script>
+    function clickHandler() {
+ 	const box = document.getElementById("box");
+    	const p = document.createElement("p");
+    	p.innerText = "Added by JS";
+    }
+  </script>
+
   </head>
   <body>
     <h1>Hello HTML</h1>
     <p>
-      My first 
-<a href="https://html.spec.whatwg.org">
-HTML
-</a>.
+      My first <a href="https://html.spec.whatwg.org">HTML</a>.
     </p>
+    <button onclick="clickHandler()">JS</button>
+    <div id="box"></div>
   </body>
 </html>
 
